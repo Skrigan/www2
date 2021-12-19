@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<title>pz3</title>
+	<meta charset="utf-8">
+	<meta name="descriprion" content="Канцелярия">
+	<link rel="stylesheet" href="css/style4.css">
+</head>
+
+<body>
+
+	<script>
+		function l_image(a, b, c) {
+			document.images.example_img.src = a;
+			document.getElementById("example_text").innerHTML = b;
+			document.getElementById("example1_text").innerHTML = c;
+		}
+		function popUp() {
+			document.getElementById('popup').className = 'popup--active';
+			document.getElementById('hover').className = 'hover_body--active';
+			document.getElementById('button').className = 'button--active';
+		}
+		function popUpHide() {
+			if (document.getElementById('popup').classList.contains("popup--active")) {
+				document.getElementById('popup').className = 'popup';
+				document.getElementById('hover').className = 'hover_body';
+				document.getElementById('button').className = '';
+			}
+		}
+	</script>
+
+	<header class="header">
+		<div class="container2">
+			<img class="img1" src="img/img1.png" alt="">
+			<div>
+				<p class="tel"><img src="img/Vector.png" alt="" style="vertical-align: middle;"> &ensp; +375 (29)
+					999-99-99</p>
+				<ul class="menu1">
+					<li><a class="but1" href="#"> <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M29.2183 5.61503C29.6635 6.76169 29.8998 7.97479 29.9166 9.20007C30.0095 10.7412 30.01 11.2452 30.0133 15.146L30.0133 15.2005C30.0133 19.1528 29.9916 19.6462 29.92 21.2025C29.895 22.4142 29.66 23.6082 29.2216 24.7406C28.8351 25.7076 28.2453 26.5857 27.4897 27.3191C26.7342 28.0526 25.8295 28.6251 24.8333 29.0003C23.6672 29.4251 22.4352 29.6544 21.19 29.6782C19.5983 29.7687 19.0767 29.7687 15.0067 29.7687C10.9367 29.7687 10.4283 29.7477 8.82333 29.6782C7.57561 29.6383 6.34405 29.3921 5.18166 28.9501C4.1851 28.5758 3.27996 28.0037 2.52406 27.2705C1.76816 26.5373 1.17813 25.6592 0.791666 24.6921C0.353333 23.558 0.118333 22.3641 0.0933332 21.154C0 19.6074 0 19.1026 0 15.1519C0 11.2013 0.0216666 10.7079 0.0933332 9.14992C0.116872 7.9416 0.353051 6.74608 0.791666 5.61503C1.17748 4.64768 1.76707 3.76916 2.52272 3.03567C3.27837 2.30218 4.18343 1.72987 5.18 1.35537C6.34557 0.930644 7.57692 0.700895 8.82166 0.675893C10.4133 0.586914 10.935 0.586914 15.005 0.586914C19.075 0.586914 19.5833 0.606328 21.1866 0.675893C22.4319 0.700712 23.6639 0.930465 24.83 1.35537C25.8264 1.73013 26.7313 2.30253 27.4869 3.03599C28.2425 3.76944 28.8322 4.64783 29.2183 5.61503ZM7.28999 15.1439C7.28999 19.2757 10.7383 22.6229 14.995 22.6229C17.0385 22.6229 18.9983 21.835 20.4432 20.4324C21.8882 19.0298 22.7 17.1274 22.7 15.1439C22.7 13.1603 21.8882 11.258 20.4432 9.85535C18.9983 8.45275 17.0385 7.66478 14.995 7.66478C10.7383 7.66478 7.28999 11.012 7.28999 15.1439ZM21.21 7.38814C21.21 8.35234 22.0116 9.13212 23.0066 9.13212C23.9983 9.13212 24.8016 8.35234 24.8016 7.38814C24.8016 7.15922 24.7552 6.93254 24.6649 6.72105C24.5747 6.50956 24.4424 6.31739 24.2757 6.15552C24.1089 5.99365 23.9109 5.86525 23.693 5.77765C23.4752 5.69005 23.2416 5.64496 23.0058 5.64496C22.77 5.64496 22.5365 5.69005 22.3186 5.77765C22.1007 5.86525 21.9027 5.99365 21.736 6.15552C21.5692 6.31739 21.4369 6.50956 21.3467 6.72105C21.2564 6.93254 21.21 7.15922 21.21 7.38814ZM20 15.1441C20 17.8273 17.7592 20.0024 14.995 20.0024C12.2308 20.0024 9.98999 17.8273 9.98999 15.1441C9.98999 12.461 12.2308 10.2859 14.995 10.2859C17.7592 10.2859 20 12.461 20 15.1441Z"
+									fill="#10133A" />
+							</svg>
+						</a></li>
+					<li><a class="but1" href="#"> <svg width="34" height="33" viewBox="0 0 34 33" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M22.1267 0H11.9001C2.56005 0 0.338379 2.15652 0.338379 11.2065V21.1333C0.338379 30.1978 2.54338 32.356 11.8834 32.356H22.1101C31.4484 32.356 33.6718 30.2156 33.6718 21.1495V11.2227C33.6718 2.15652 31.4667 0 22.1267 0ZM27.2484 23.086H24.8167C23.8967 23.086 23.6201 22.3628 21.9701 20.7612C20.5301 19.4136 19.9217 19.2453 19.5567 19.2453C19.0534 19.2453 18.9151 19.3796 18.9151 20.0542V22.1768C18.9151 22.7511 18.7234 23.0876 17.1784 23.0876C15.679 22.9898 14.2249 22.5476 12.9361 21.7974C11.6472 21.0473 10.5603 20.0107 9.76506 18.7729C7.877 16.4918 6.56329 13.8146 5.92839 10.9541C5.92839 10.5998 6.06672 10.2795 6.76172 10.2795H9.19172C9.81672 10.2795 10.0417 10.5497 10.2867 11.1725C11.4667 14.544 13.4801 17.4755 14.2967 17.4755C14.6101 17.4755 14.7467 17.3412 14.7467 16.5824V13.1106C14.6434 11.5268 13.7767 11.3925 13.7767 10.8198C13.7879 10.6688 13.8592 10.5279 13.9755 10.427C14.0919 10.3261 14.2442 10.2732 14.4001 10.2795H18.2201C18.7417 10.2795 18.9151 10.5319 18.9151 11.1385V15.8237C18.9151 16.3301 19.1401 16.4983 19.2967 16.4983C19.6101 16.4983 19.8517 16.3301 20.4251 15.7735C21.6565 14.3158 22.6626 12.6917 23.4117 10.9525C23.4883 10.7436 23.6332 10.5647 23.8243 10.4432C24.0154 10.3217 24.2422 10.2642 24.4701 10.2795H26.9017C27.6301 10.2795 27.7851 10.6338 27.6301 11.1385C26.7459 13.0612 25.6519 14.8862 24.3667 16.5824C24.1051 16.9707 24.0001 17.1729 24.3667 17.6275C24.6084 17.9818 25.4601 18.6726 26.0334 19.3294C26.8666 20.1362 27.5585 21.0695 28.0817 22.0926C28.2901 22.7495 27.9417 23.0876 27.2484 23.0876V23.086Z"
+									fill="#10133A" />
+							</svg>
+						</a></li>
+					<li><a class="but1" href="#"> <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M1.78501 0.646729H30.245C31.225 0.646729 32.005 1.40386 32.005 2.35512V30C32.005 30.9319 31.225 31.7084 30.245 31.7084H22.085V19.672H26.245L26.865 14.9934H22.085V12.0037C22.085 10.6447 22.485 9.71286 24.485 9.71286H27.045V5.51953C26.605 5.46129 25.085 5.34481 23.325 5.34481C19.625 5.34481 17.105 7.51913 17.105 11.5377V14.9934H12.925V19.672H17.105V31.7084H1.78501C1.31636 31.7085 0.866619 31.5291 0.533373 31.2093C0.200128 30.8894 0.0102705 30.4549 0.00500488 30V2.35512C0.00500488 1.40386 0.805005 0.646729 1.78501 0.646729Z"
+									fill="#10133A" />
+							</svg>
+						</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="line">
+			<div class="container">
+				<ul class="menu2">
+					<li>
+						<a class="but2" href="#about_trainers">О тренерах</a>
+					</li>
+					<li>
+						<a class="but2" href="#workout">Тренировки</a>
+					</li>
+					<li>
+						<a class="but2" href="#reviews">Отзывы</a>
+					</li>
+					<li>
+						<a class="but2" href="#contacts">Контакты</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<section class="section1">
+		<div class="container" style="height: 728px; display:flex;">
+			<div>
+				<h1 class="pt">
+					Персональные тренировки
+				</h1>
+				<div style="padding-top: 25px;">
+					Приведи своё тело<br>в порядок с Fitness Storie
+				</div>
+			</div>
+			<img class="fleximg1" src="img/fleximg.png" alt="">
+		</div>
+	<div class="section2">
+		<div class="container" style="height: 596px; display:flex;">
+			<ul class="menu3">
+				<li>
+					<a class="but3" href="javascript:l_image('img/face.png', 'Учитываются все особенности Вашего здоровья. Для нас важно, чтобы занятия не были во вред Вашему здоровью.', 'Учет особенностей здоровья' )">Учет особенностей здоровья</a>
+				</li>
+				<li>
+					<a class="but3"
+						href="javascript:l_image('img/RUKA1.png', 'Результат работы не заставит себя ждать! Уже через неделю вы увидите изменения в зеркале.','Эффективность упражнений')">Эффективность упражнений</a>
+				</li>
+				<li>
+					<a class="but3" href="javascript:l_image('img/kalendar.png', 'Дни и время занятий подбираются индивидуально под Вас.','Индивидуальный график')">Индивидуальный график</a>
+				</li>
+				<li>
+					<a class="but3" href="javascript:l_image('img/eat.png', 'Для более эффективного и быстрого результата мы составим для Вас фитнес-меню с учетом Ваших предпочтений.','Персональное питание')">Персональное питание</a>
+				</li>
+			</ul>
+			<svg style="padding-top: 97px;" width="5" height="446" viewBox="0 0 5 446" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<line x1="2.5" y1="2.5" x2="2.49998" y2="443.5" stroke="url(#paint0_linear_101_27)" stroke-width="5"
+					stroke-linecap="round" stroke-linejoin="round" />
+				<defs>
+					<linearGradient id="paint0_linear_101_27" x1="-0.000348747" y1="446" x2="0.00054313" y2="1.08605e-09"
+						gradientUnits="userSpaceOnUse">
+						<stop offset="0" stop-color="#F6CF45"/>
+						<stop offset="1" stop-color="#EF4621" />
+					</linearGradient>
+				</defs>
+			</svg>
+			<div class="inter">
+				<img class="face" src="img/face.PNG" id="example_img" alt="">
+				<div class="inter2" id="example_text">Учитываются все особенности Вашего здоровья. Для нас важно, чтобы занятия не были во вред Вашему здоровью.</div>
+			</div>
+		</div>
+	</div>
+</section>
+	<section class="section1">
+		<div class="container" style="height: 1100px;">
+			<div class="precont1">
+				<div class="d1">
+					<h1 class="tren" id="about_trainers">Наши тренера</h1>
+					<svg style="margin-bottom: 50px;" width="274" height="3" viewBox="0 0 274 3" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<line x1="1.5" y1="1.5" x2="272.5" y2="1.50002" stroke="url(#paint0_linear_1_69)" stroke-width="3"
+							stroke-linecap="round" stroke-linejoin="round" />
+						<defs>
+							<linearGradient id="paint0_linear_1_69" x1="274" y1="3.00035" x2="0" y2="3"
+								gradientUnits="userSpaceOnUse">
+								<stop offset="0" stop-color="#F6CF45" />
+								<stop offset="1" stop-color="#EF4621" />
+							</linearGradient>
+						</defs>
+					</svg>
+					<div class="tren2">
+						Все тренера являются сертифицированными специалистами. Индивидуально подходят к каждому, учитая все
+						особенности. Все наши тренера являются действующими спортсменами.
+					</div>
+				</div>
+				<img class="girl3" src="img/3girl.jfif" alt="">
+			</div>
+			<div class="precont2">
+				<img class="rungirl" src="img/runGirl.png" alt="">
+				<div class="d2">
+					<h1 class="tren" id="workout">Тренировки</h1>
+					<svg style="margin-bottom: 50px;" width="232" height="3" viewBox="0 0 232 3" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<line x1="1.5" y1="1.5" x2="230.5" y2="1.50002" stroke="url(#paint0_linear_1_72)" stroke-width="3"
+							stroke-linecap="round" />
+						<defs>
+							<linearGradient id="paint0_linear_1_72" x1="0" y1="3" x2="232" y2="2.99998"
+								gradientUnits="userSpaceOnUse">
+								<stop offset="0" stop-color="#EF4621" />
+								<stop offset="1" stop-color="#F6CF45" />
+							</linearGradient>
+						</defs>
+					</svg>
+					<div class="tren3">План тренировки составляется исходя из Ваших целей. План питания также составляется
+						из Ваших пожеланий и целей. А также расписание занятий составляется по Вашему желанию. Тренировки
+						проводятся в профессионально оборудованном зале.</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section3">
+		<div class="container-comm">
+
+			<svg width="36" height="68" viewBox="0 0 36 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M35 1L2 34L35 67" stroke="#10133A" stroke-width="2" />
+			</svg>
+
+			<div class="comm">
+				<h1 class="h-comm" id="reviews">Отзывы</h1>
+				<svg width="153" height="3" viewBox="0 0 153 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line x1="1.5" y1="1.5" x2="151.5" y2="1.50001" stroke="url(#paint0_linear_1_108)" stroke-width="3"
+						stroke-linecap="round" />
+					<defs>
+						<linearGradient id="paint0_linear_1_108" x1="153" y1="3" x2="0" y2="3" gradientUnits="userSpaceOnUse">
+							<stop offset="0" stop-color="#F6CF45" />
+							<stop offset="1" stop-color="#EF4621" />
+						</linearGradient>
+					</defs>
+				</svg>
+				<svg class="commgirl" width="198" height="198" viewBox="0 0 198 198" fill="none"
+					xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<circle cx="99" cy="99" r="99" fill="#C4C4C4" />
+					<circle cx="99" cy="99" r="99" fill="url(#pattern0)" />
+					<defs>
+						<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+							<use xlink:href="#image0_1:112" transform="translate(0 -0.25) scale(0.00378788)" />
+						</pattern>
+						<image id="image0_1:112" width="264" height="396" xlink:href="img/circlGirl.jfif " />
+					</defs>
+				</svg>
+				<svg width="182" height="19" viewBox="0 0 182 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M1 3.5L10.3934 12.8934C16.2513 18.7513 25.7487 18.7513 31.6066 12.8934L38.8934 5.6066C44.7513 -0.251261 54.2487 -0.251263 60.1066 5.6066L67.3934 12.8934C73.2513 18.7513 82.7487 18.7513 88.6066 12.8934L95.8934 5.6066C101.751 -0.251261 111.249 -0.251263 117.107 5.6066L124.393 12.8934C130.251 18.7513 139.749 18.7513 145.607 12.8934L152.893 5.6066C158.751 -0.251261 168.249 -0.251261 174.107 5.6066L180.5 12"
+						stroke="#10133A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+				<div class="text-comm">Хочу поделиться своим результатом. -6 кг за месяц. Заниматься было
+					только в удовольствие. Спасибо Виктории за ее опыт, мотивацию, професcионализм. Продолжаю заниматься для
+					поддержки формы.</div>
+			</div>
+
+			<svg width="36" height="68" viewBox="0 0 36 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M1 1L34 34L1 67" stroke="#10133A" stroke-width="2" />
+			</svg>
+
+		</div>
+	</section>
+	<section class="section1">
+		<div class="container-vidio">
+			<iframe class="youtube" src="https://www.youtube.com/embed/efJER_016S4" title="YouTube video player"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+			<h1 class="h-comm">Записаться на пробное БЕСПЛАТОЕ занятие</h1>
+			<svg width="835" height="3" viewBox="0 0 835 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<line x1="1.5" y1="1.5" x2="854.5" y2="1.49993" stroke="url(#paint0_linear_1_87)" stroke-width="3" stroke-linecap="round"/>
+				<defs>
+				<linearGradient id="paint0_linear_1_87" x1="0" y1="3" x2="835" y2="3.00007" gradientUnits="userSpaceOnUse">
+				<stop offset="0" stop-color="#EF4621"/>
+				<stop offset="1" stop-color="#F6CF45"/>
+				</linearGradient>
+				</defs>
+				</svg>
+			<form class="contact_form" method="post" action="form.php">
+
+				<div>
+					<label>Имя*</label>
+					<input type="text" name="name" required>
+				</div>
+
+				<div>
+					<label>Фамилия*</label>
+					<input type="text" name="surname" required>
+				</div>
+
+				<div>
+					<label>Телефон</label>
+					<input type='tel' placeholder='+375 XX XXXXXXX' required pattern='\+{1}375\s{0,1}(25|29|33|44)\s{0,1}[0-9]{7}'>
+				</div>
+				<div>
+					<label>Цель</label>
+					<select class="target" name="country">
+						<option>Похудеть</option>
+						<option value="Набрать массу">Набрать массу</option>
+						<option value="Скорректировать пропорции">Скорректировать пропорции</option>
+						<option value="Поддержка формы">Поддержка формы</option>
+						<option value="Специализированные тренировки">Специализированные тренировки</option>
+					</select>
+					<div class="select-arrow"></div>
+				</div>
+				<div class="radio">
+					<span class="addres">Адрес*</span>
+
+					<input type="radio" name="r" id="r1">
+					<label for="r1">ул. Комсомольская9 </label>
+
+					<input type="radio" name="r" id="r2">
+					<label for="r2">Пер. Яблочный 1</label>
+				</div>
+
+				<button class="button2" type="submit">Записаться</button>
+			</form>
+		</div>
+	</section>
+	<section class="section5">
+		<div id="karta" style="height: 750px;"> <iframe class="karta"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4041.222394990131!2d27.421634088951915!3d53.88846247757177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbdb1d8d41a625%3A0xf88315f8c6c534bd!2z0YPQuy4g0KHRg9GF0LDRgNC10LLRgdC60LDRjyA1Niwg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1636482400019!5m2!1sru!2sby"
+				allowfullscreen="" loading="lazy"></iframe></div>
+
+		<div class="kvadrat">
+			<div class="conte">
+				<h1 class="contacts" id="contacts">Контакты</h1>
+				<svg class="lineKvadrat" height="3" viewBox="0 0 185 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line x1="1.5" y1="1.5" x2="183.5" y2="1.5" stroke="url(#paint0_linear_1:21)" stroke-width="3"
+						stroke-linecap="round" />
+					<defs>
+						<linearGradient id="paint0_linear_1:21" x1="0" y1="3" x2="185" y2="3" gradientUnits="userSpaceOnUse">
+							<stop offset="0" stop-color="#EF4621" />
+							<stop offset="1" stop-color="#F6CF45" />
+						</linearGradient>
+					</defs>
+				</svg>
+			</div>
+
+			<svg class="lol" width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M17.3433 18.2249L19.5833 16.0158C19.885 15.7219 20.2667 15.5208 20.6821 15.4367C21.0975 15.3527 21.5287 15.3894 21.9233 15.5424L24.6533 16.6174C25.0521 16.777 25.3941 17.0495 25.6361 17.4005C25.8781 17.7515 26.0094 18.1653 26.0133 18.5898V23.5209C26.011 23.8097 25.9495 24.095 25.8324 24.3596C25.7153 24.6243 25.5452 24.8629 25.3321 25.061C25.1191 25.2591 24.8677 25.4126 24.5929 25.5123C24.3181 25.6121 24.0257 25.6559 23.7333 25.6413C4.60332 24.4677 0.743318 8.49091 0.0133175 2.37634C-0.0205696 2.07608 0.0103921 1.77213 0.104166 1.48451C0.197939 1.19689 0.352399 0.932115 0.557385 0.707595C0.76237 0.483076 1.01323 0.303904 1.29348 0.181869C1.57372 0.0598326 1.87698 -0.0023021 2.18332 -0.000447975H7.01332C7.44433 0.000810232 7.8651 0.129208 8.22151 0.36823C8.57793 0.607253 8.85369 0.945969 9.01332 1.34081L10.1033 4.03319C10.2636 4.42085 10.3045 4.84647 10.2209 5.25691C10.1373 5.66734 9.93292 6.04439 9.63332 6.34095L7.39332 8.55009C7.39332 8.55009 8.68332 17.1598 17.3433 18.2249Z"
+					fill="black" />
+			</svg>
+			<p class="telef">+ 375 (44) 444-44-44</p>
+
+
+			<svg class="lol1" width="24" height="33" viewBox="0 0 24 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M12 9.76292e-10C8.88517 0.00256576 5.89796 1.22065 3.69078 3.3882C1.4836 5.55575 0.235821 8.49662 0.219971 11.5685C0.219971 16.1742 2.83997 20.0304 4.75997 22.8411L5.10997 23.354C7.02025 26.0845 9.06954 28.7178 11.25 31.2438L12.01 32.1216L12.77 31.2438C14.9501 28.7176 16.9994 26.0843 18.91 23.354L19.26 22.8313C21.17 20.0205 23.79 16.1742 23.79 11.5685C23.7741 8.49492 22.525 5.55255 20.3156 3.38472C18.1063 1.21689 15.1165 -3.98005e-05 12 9.76292e-10ZM12 16.7659C10.7025 16.7659 9.43422 16.3865 8.35543 15.6756C7.27665 14.9647 6.43583 13.9543 5.93932 12.7721C5.44281 11.5899 5.3129 10.2891 5.56602 9.03409C5.81914 7.7791 6.44392 6.62631 7.36135 5.72151C8.27878 4.81671 9.44767 4.20053 10.7202 3.95089C11.9927 3.70126 13.3117 3.82938 14.5104 4.31906C15.7091 4.80873 16.7336 5.63797 17.4544 6.7019C18.1752 7.76583 18.56 9.01668 18.56 10.2963C18.56 12.0121 17.8688 13.6577 16.6386 14.871C15.4084 16.0843 13.7398 16.7659 12 16.7659Z"
+					fill="black" />
+			</svg>
+			<p class="addres1">г. Минск,
+				ул. Сухаревская 56</p>
+
+			<button class="butt2" onclick="popUp()" id='butt2'>Заказать звонок</button><a href='' id='f'
+				onclick='hello()'></a>
+			<div class='hover_body' id='hover' onclick='popUpHide()'></div>
+
+			<div class='popup' id='popup'>
+
+				<div class='footer'>
+					<div class="kvadrat2">
+						<div class="boox">
+							<div class="popup__close" onclick="popUpHide()">
+								<img src="img/close.svg" alt="иконка">
+							</div>
+							<p class="CallTel"> Заказать звонок </p>
+							<p class="textt">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ.<br>
+								Оставьте свой номер телефона, и мы перезвоним Вам. </p>
+
+							<div style="margin-top: 44px;">
+								<label class="teleff">Телефон*</label>
+								<input class="tel1" id="tel1" required pattern='\+{1}375\s{0,1}(25|29|33|44)\s{0,1}[0-9]{7}'>
+							</div>
+							<a class="ocherednayabutt" href="">
+								<p> Заказать звонок </p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer id="footer" class="footer">
+		<!-- <div class="container"> -->
+		<div class="naf10">
+			<div class="line"></div>
+			<ul class="menu4">
+				<li><a class="buttt" href="#about_trainers"> О тренерах </a></li>
+				<li><a class="buttt" href="#workout"> Тренировки </a></li>
+				<li><img src="img/logo3.PNG" alt="logo"></li>
+				<li><a class="buttt" href="#reviews"> Отзывы </a></li>
+				<li><a class="buttt" href="#contacts"> Контакты </a></li>
+			</ul>
+		</div>
+		<!-- </div> -->
+
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
